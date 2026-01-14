@@ -28,3 +28,28 @@
 - Event retention: 10 days
 - Monitoring interval: 60 seconds
 - Thresholds: CPU 80%, Memory 80%, Disk 90%
+
+## Patch 0006: LLM Diagnostics Interface
+**Applied:** $(date -Iseconds)
+**By:** Ka_tuar_el
+
+### Changes
+- Integrated Ollama for local LLM diagnostics
+- Created natural language query interface
+- Added conversation logging to Neo4j
+- Implemented diagnostic tool integration
+- CLI commands: mythos-ask, mythos-chat
+
+### Files Created
+- `/opt/mythos/llm_diagnostics/` (complete installation)
+- `/usr/local/bin/mythos-ask` (CLI query tool)
+- `/usr/local/bin/mythos-chat` (interactive mode)
+
+### Features
+- Natural language system queries
+- Graph-powered diagnostics
+- Read-only access (no system changes)
+- Full conversation logging
+
+### Model
+- llama3.2:3b (3B parameters, efficient)

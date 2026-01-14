@@ -2,7 +2,7 @@
   "system_name": "Mythos",
   "created_by": "Ka_tuar_el",
   "initialized": "2025-01-14T00:00:00Z",
-  "current_patch": 5,
+  "current_patch": 6,
   "patches": [
     {
       "number": 5,
@@ -17,6 +17,21 @@
         "/opt/mythos/graph_logging/src/diagnostics.py",
         "/opt/mythos/graph_logging/config/monitoring_config.yaml",
         "~/.config/systemd/user/arcturus-monitor.service"
+      ],
+      "rollback_available": true
+    },
+    {
+      "number": 6,
+      "name": "llm_diagnostics",
+      "description": "LLM diagnostics interface with Ollama integration",
+      "applied_at": "2026-01-14T16:40:32.691119Z",
+      "applied_by": "Ka_tuar_el",
+      "git_commit": "201ee800ed4b30cd8822d3cbf6e18af922037107",
+      "files_modified": [
+        "/opt/mythos/llm_diagnostics/src/mythos_ask.py",
+        "/opt/mythos/llm_diagnostics/src/conversation_logger.py",
+        "/usr/local/bin/mythos-ask",
+        "/usr/local/bin/mythos-chat"
       ],
       "rollback_available": true
     }
