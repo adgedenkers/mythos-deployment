@@ -2,6 +2,23 @@
   "system_name": "Mythos",
   "created_by": "Ka_tuar_el",
   "initialized": "2025-01-14T00:00:00Z",
-  "current_patch": 0,
-  "patches": []
+  "current_patch": 5,
+  "patches": [
+    {
+      "number": 5,
+      "name": "graph_logging",
+      "description": "AI-native event logging system with Neo4j graph storage",
+      "applied_at": "2026-01-14T15:43:28.203039Z",
+      "applied_by": "Ka_tuar_el",
+      "git_commit": "a4b176786ac1e418a30462ecd93841148a8ab51f",
+      "files_modified": [
+        "/opt/mythos/graph_logging/src/system_monitor.py",
+        "/opt/mythos/graph_logging/src/event_logger.py",
+        "/opt/mythos/graph_logging/src/diagnostics.py",
+        "/opt/mythos/graph_logging/config/monitoring_config.yaml",
+        "~/.config/systemd/user/arcturus-monitor.service"
+      ],
+      "rollback_available": true
+    }
+  ]
 }
